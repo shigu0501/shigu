@@ -48,7 +48,8 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  adapter: mysql2
-  encoding: utf8
-  database: pictweet_production
-  url: <%= ENV['CLEARDB_DATABASE_URL'] %>
+  <<: *default
+  database: heroku_816b12059d1537a
+  username: "b0eb5ff0085e60"
+  password: "a76ee10d"
+  host: "us-cdbr-iron-east-04.cleardb.net"
